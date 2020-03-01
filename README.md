@@ -15,6 +15,8 @@
   
 - 思路
   - 碰到二叉树的问题，就想想整棵树在该问题上的结果和左右儿子在该问题上的结果之间的联系是什么
+  
+- [binary-tree-inorder-traversal](https://www.lintcode.com/problem/binary-tree-inorder-traversal/description)
 
 - [validate binary search tree](https://www.lintcode.com/problem/validate-binary-search-tree/description)
 
