@@ -22,6 +22,12 @@
     - 挪到下一个点的算法如下:
       - 如果当前点存在右子树，那么就是右子树中“一路向西”最左边的那个点
       - 如果当前点不存在右子树，则是走到当前点的路径中，第一个左拐的点
+
+- [maximum-depth-of-binary-tree](https://www.lintcode.com/problem/maximum-depth-of-binary-tree/description)
+  - 点node为根的树高度，等于高度最大的子树的高度+1
+  
+- [minimum-depth-of-binary-tree](https://www.lintcode.com/problem/minimum-depth-of-binary-tree/description)
+  - 参考maximum-depth-of-binary-tree
       
 - [binary-tree-postorder-traversal](https://www.lintcode.com/problem/binary-tree-postorder-traversal/description)
 
