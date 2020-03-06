@@ -33,6 +33,13 @@
 
 - [balanced-binary-tree](https://www.lintcode.com/problem/balanced-binary-tree/description)
   - 用两个DFS分别得到左子树和右子树的深度，然后进行比较
+  
+- [lowest-common-ancestor-of-a-binary-tree](https://www.lintcode.com/problem/lowest-common-ancestor-of-a-binary-tree/description)
+  - 在root为根的二叉树中找A,B的LCA:
+    - 如果找到了就返回这个LCA
+    - 如果只碰到A，就返回A
+    - 如果只碰到B，就返回B
+    - 如果都没有，就返回null
 
 - [validate binary search tree](https://www.lintcode.com/problem/validate-binary-search-tree/description)
 
