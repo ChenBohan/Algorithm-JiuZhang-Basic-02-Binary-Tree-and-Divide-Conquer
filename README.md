@@ -17,6 +17,13 @@
   - 碰到二叉树的问题，就想想整棵树在该问题上的结果和左右儿子在该问题上的结果之间的联系是什么
   
 - [binary-tree-inorder-traversal](https://www.lintcode.com/problem/binary-tree-inorder-traversal/description)
+  - 递归分治法
+  - 非递归
+    - 挪到下一个点的算法如下:
+      - 如果当前点存在右子树，那么就是右子树中“一路向西”最左边的那个点
+      - 如果当前点不存在右子树，则是走到当前点的路径中，第一个左拐的点
+      
+- [binary-tree-postorder-traversal](https://www.lintcode.com/problem/binary-tree-postorder-traversal/description)
 
 - [validate binary search tree](https://www.lintcode.com/problem/validate-binary-search-tree/description)
 
