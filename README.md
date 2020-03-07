@@ -73,8 +73,7 @@
     - root
     - left + right + root
     - 不断往上传递的值 只可能是 1， 2， 3中的一种，第四种情况只可能保存在 max里面 而不可能在 curr_max
-
-注意，当root == null,以上2个值都要置为Integer_MIN_VALUE; 因为没有节点可取的时候，是不存在solution的。以免干扰递归的计算
+  - 注意，当root == null,以上2个值都要置为Integer_MIN_VALUE; 因为没有节点可取的时候，是不存在solution的。以免干扰递归的计算
 
 - [validate binary search tree](https://www.lintcode.com/problem/validate-binary-search-tree/description)
 
