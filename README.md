@@ -76,3 +76,6 @@
   - 在树上定位要插入节点的位置。
     - 如果它大于当前根节点，则应该在右子树中，如果没有右子树则将该点作为右儿子插入；若存在右子树则在右子树中继续定位。
     - 如果它小于当前根节点，则应该在左子树中，处理同上。
+
+- [binary-tree-level-order-traversal](https://www.lintcode.com/problem/binary-tree-level-order-traversal/description)
+  - 二叉树的层次遍历通常实现方式为使用队列不断压入节点遍历,每次取出队列首个元素遍历左右子节点，继续压入子节点即可。
