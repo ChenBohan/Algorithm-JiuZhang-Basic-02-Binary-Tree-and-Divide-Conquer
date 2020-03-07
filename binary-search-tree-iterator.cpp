@@ -43,14 +43,13 @@ public:
      * @return: return next node
      */
     TreeNode * next() {
-        while (current != NULL){
+        while(current){
             myStack.push(current);
             current = current->left;
         }
-        current = myStack.top();
+        TreeNode* result = myStack.top();
         myStack.pop();
-        TreeNode *result = current;
-        current = current->right;
+        current = result->right;
         return result;
     }
 };
