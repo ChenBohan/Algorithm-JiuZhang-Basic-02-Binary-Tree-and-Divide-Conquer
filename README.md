@@ -1,6 +1,27 @@
 # Algorithm-02-JiuZhang-Binary-Tree-and-Divide-Conquer
 九章算法基础班 - 二叉树和分治法
 
+### 课程大纲
+
+• 用树形分析法计算时间复杂度
+• 递归是深度优先搜索算法(DFS)的一种实现形式
+  • DFS可以使用非递归的方式实现
+• 二叉树上的递归 Recursion in Binary Tree
+  • 遍历法 Traverse
+  • 分治法 Divide Conquer
+• 二叉搜索树
+  • 性质：中序遍历是升序序列
+  • 功能：O(h)的时间查找，删除，插入
+• 二叉树上的宽度优先搜索
+  • 使用一个队列的宽度优先搜索算法
+    • 在二叉树上无需使用 Hash 判重
+  • 如何实现分层遍历
+• 必“背”程序：
+  • 非递归版本的 Pre Order, In Order
+  • 二叉树分层遍历
+
+### 题目
+
 - DFS
   - 递归
     - 遍历法
