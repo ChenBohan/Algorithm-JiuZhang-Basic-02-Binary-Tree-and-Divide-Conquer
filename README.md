@@ -42,13 +42,16 @@
     - 如果都没有，就返回null
     
 - [binary-tree-maximum-path-sum](https://www.lintcode.com/problem/binary-tree-maximum-path-sum/description)
-  - 通过root的path.
-    - 如果左子树从左树根到任何一个Node的path大于零，可以链到root上
-    - 如果右子树从右树根到任何一个Node的path大于零，可以链到root上
-  - 不通过root的path. 这个可以取左子树及右子树的path的最大值。
-  - 所以创建一个inner class,记录2个值：
-    - any to any: 本树的最大path。
-    - root to any: 本树从根节点出发到任何一个节点的最大path.
+  - 利用分治法 解决问题
+    - 需要一个变量`root to any`不断记录带有root点的路径的最大值 curr_max 局部变量
+    - 需要另一个变量`any to any`记录当前的最大路径值 max 类变量
+    - 最后返回 当前的最大路径值
+  - 有4种情况要考虑
+    - left + root
+    - right + root
+    - root
+    - left + right + root
+    - 不断往上传递的值 只可能是 1， 2， 3中的一种，第四种情况只可能保存在 max里面 而不可能在 curr_max
 
 注意，当root == null,以上2个值都要置为Integer_MIN_VALUE; 因为没有节点可取的时候，是不存在solution的。以免干扰递归的计算
 
