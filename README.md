@@ -40,6 +40,17 @@
     - 如果只碰到A，就返回A
     - 如果只碰到B，就返回B
     - 如果都没有，就返回null
+    
+- [binary-tree-maximum-path-sum](https://www.lintcode.com/problem/binary-tree-maximum-path-sum/description)
+  - 通过root的path.
+    - 如果左子树从左树根到任何一个Node的path大于零，可以链到root上
+    - 如果右子树从右树根到任何一个Node的path大于零，可以链到root上
+  - 不通过root的path. 这个可以取左子树及右子树的path的最大值。
+  - 所以创建一个inner class,记录2个值：
+    - any to any: 本树的最大path。
+    - root to any: 本树从根节点出发到任何一个节点的最大path.
+
+注意，当root == null,以上2个值都要置为Integer_MIN_VALUE; 因为没有节点可取的时候，是不存在solution的。以免干扰递归的计算
 
 - [validate binary search tree](https://www.lintcode.com/problem/validate-binary-search-tree/description)
 
